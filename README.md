@@ -1,17 +1,42 @@
-# Chat with your PDF - A RAG Application
-![Application Screenshot](https://raw.githubusercontent.com/i3hz/PDF-chatbot/main/assets/screenshot.png)
-  
-This project is a web application that allows you to upload a PDF document and have an interactive chat with it. It uses a powerful AI technique called **Retrieval-Augmented Generation (RAG)** to provide answers based exclusively on the content of your document.
+# Legal AI Chatbot - Multi-PDF Analysis with Indian Case Law Integration
 
-The application is built with **FastAPI** for the backend, **LangChain** for orchestrating the AI logic, and **OpenAI's** models for embeddings and language generation.
+![Application Screenshot](https://raw.githubusercontent.com/Anushka05012/legal-chatbot/main/assets/screenshot.png)
+  
+This is an advanced legal AI assistant that combines **multi-document PDF analysis** with **Indian court case law search** using RAG (Retrieval-Augmented Generation). Upload up to 3 legal documents simultaneously and get comprehensive cross-document analysis, find relevant precedents from 10M+ Indian court cases, and compare your cases with similar precedents.
+
+Built with **FastAPI**, **LangChain**, **OpenAI GPT-4o-mini**, and integrated with the **Indian Kanoon API** for real-time legal case search.
 
 ## Features
 
--   **Simple Web Interface**: Easy-to-use UI for uploading PDFs and chatting.
--   **Secure & Private**: Your document is processed in a unique, isolated session. The AI model only answers based on the provided document, not its general knowledge.
--   **Context-Aware Conversations**: The AI remembers the context of the chat within a session.
--   **Source-Grounded Answers**: The answers are generated directly from the text within your PDF.
--   **Powered by State-of-the-Art AI**: Utilizes OpenAI's powerful embedding and `gpt-4-turbo` models for high-quality results.
+### 📄 Multi-PDF Analysis (Up to 3 Documents)
+-   **Upload multiple PDFs**: Analyze up to 3 legal documents simultaneously
+-   **Cross-document analysis**: Compare cases, identify patterns, and find common legal themes
+-   **Smart document management**: Add/remove PDFs dynamically with visual feedback
+-   **Unified search**: All documents merged into single vector store for comprehensive analysis
+
+### ⚖️ Indian Court Case Search
+-   **10M+ cases**: Search across all Indian courts (Supreme Court, High Courts, Tribunals)
+-   **AI-powered search**: Intelligent query generation extracts optimal legal terms
+-   **Smart filtering**: Automatically filters out Acts/Sections, returns only judgments
+-   **Relevance ranking**: Multi-factor scoring + AI semantic re-ranking for best results
+
+### 🔍 Precedent Finding & Comparison
+-   **Find precedents**: Automatically discovers similar cases based on your documents
+-   **Compare cases**: Detailed comparison analysis with tabular format
+-   **Cached results**: Optimized workflow - search once, compare multiple times
+-   **Citation-rich**: All responses include proper case citations and links
+
+### 💬 Intelligent Q&A
+-   **Context-aware**: Answers questions about uploaded PDFs and found precedents
+-   **Detailed analysis**: Structured legal responses with headings, sections, and citations
+-   **Document citation**: Always specifies which document contains referenced information
+-   **Markdown formatting**: Professional legal document styling with tables and lists
+
+### 🎨 Modern Full-Screen UI
+-   **Full-screen interface**: Maximized space for legal content
+-   **Compact controls**: Minimalist header and buttons for more conversation space
+-   **Legal disclaimer**: Professional warning banner for ethical use
+-   **Responsive design**: Clean, modern interface with intuitive controls
 
 ## How It Works: The RAG Architecture
 
